@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("https://images.unsplash.com/photo-1674562515404-55c2aa4a989d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  background-size: cover;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  background-size: cover;
+
+  font-size: 20px;
+}
+.calculator {
+  box-shadow: 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2);
+  display: grid;
+  border-radius: 25px;
+  padding: 45px;
+  grid-template-columns: repeat(4, 66px); /* kaya siya nag column ng 4 */
+}
+input {
+  grid-column: span 4; /*Yung input is yung nagdidisplay n value so sakop niya yung 4 na column */
+  width: 258px;
+  height: 100px;
+  box-shadow: inset -6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 35px;
+  text-align: end;
+  margin: 45px 0px 5px 0px;
+  padding: 20px;
+  font-size: 40px;
+}
+button {
+  box-shadow: inset -6px -6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.equal {
+  box-shadow: inset -6px -6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2),
+    inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 45px;
+  width: 125px;
+}
+.back {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+}
+.back a {
+  color: white;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 35px;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 700px) {
+  /* For tablets: */
+  .container {
+    width: 80%;
+    padding: 0;
+  }
+  .calculator {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: auto;
+    padding: 0;
+  }
+  .calculator {
+    width: 100%;
+  }
+}

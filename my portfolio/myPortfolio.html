@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  
+    <title>Document</title>
+  
+</head>  
+
+<body>
+    <div class="logo">GOOD DAY! </div>
+    <div>
+        <nav class="nav">
+           <ul>
+                <li><a href="myPortfolio.html">HOME</a></li>
+                <li><a href="#abme">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                    <li>
+                    <a href="#">MY WORK</a>
+                        <ul class="dropdown">
+                             <li><a href="calculator.html">CALCULATOR</a></li>
+                             <li><a href="#">GAME</a></li>
+                        </ul>
+                    </li>
+         </ul> 
+
+        </nav>
+    </div>
+<section class="container">
+        <img class="img" src="c1.jpg" alt="Showme">
+        
+        <div class="profile">
+        <h1 class="greet">Cyril </h1>
+        </div>
+   <br>
+        <div class="mygreet">
+            <p class="greet-2">I'm a 
+            <ul class="text-animation">
+                <li>Junior</li>
+                <li>Front-End</li>
+                <li>Developer</li>
+            </ul>
+</p>
+  </div>
+        
+    </div>
+    </div>
+</div>
+
+</section>
+
+<section class="setbg ">
+
+   <h1 id="abme" >ABOUT ME</h1>
+    <div class ="main"> 
+
+ <img src="c2.jpg" class="second-img reveal" width="370px" height="450px">
+ <div class="dsgn1"></div>
+ <div class="dsgn2"></div>
+    <p class="im reveal">
+        <br> I'm Cyril John De Leon. 
+        <br>I am a self learner in Front-End Web Developer.I can provide a cleancode and make the websites interactive.
+        I can also make a responsive web design and makes your websites accessible to all user regardless of their devices. 
+    </p>
+</div>
+
+<div class="progress-skills reveal">
+<div class="skills">
+    <h1>My Skills </h1>
+    <div class="nt">HTML </div>
+<div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped" style="width: 70%">HTML 70%</div>
+  </div>
+  <div class="nt">CSS</div>
+  <div class="progress " role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped bg-success " style="width: 50%">CSS 50%</div>
+  </div>
+  <div class="nt" >Javascript</div>
+  <div class="progress " role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar progress-bar-striped bg-info" style="width: 30%">Javascript 30%</div>
+  </div>
+</section>
+<section id="contact"
+>
+    <div class="container-1">
+        <div class="container-2 reveal">
+        <h1 class="contact-head">Contact Form</h1>
+
+        <form method="post" id="form">
+        <input type="Name" id="name" placeholder="Enter Your Name Here" required>
+        <br><p id="error-message"></p>
+        <input type="Email" id="email" placeholder="Enter Your Email" required>
+        <br><p id="error-email"></p>
+        <textarea id="message" rows="5"  placeholder="Enter Your Message Here" required></textarea>
+        <br><p id="inputmessage"></p>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    </div>
+</div>
+    <div class="other reveal">
+    
+        <i class="bi bi-telephone"></i>
+    <p style="font-size: 25px;">9774674879</p>
+  <a href="https://www.facebook.com/cyriljohn.perena"><i class="bi bi-messenger "></i></a> 
+  <p style="font-size: 25px;">Facebook</p>
+</div> 
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+<script src="portfolio.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
